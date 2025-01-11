@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 | McKenna Johnson</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - McKenna Johnson</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals | McKenna Johnson. This is a home page design.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Anton+SC&display=swap">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 | McKenna Johnson</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals | McKenna Johnson</h1> 
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="www.linkedin.com/in/mckenna-johnson-123798161">LINKEDIN</a></li>
+            <li><a href="https://byupw.instructure.com/">CANVAS</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p45-p47#p45">FAVORITE SCRIPTURE</a></li>
+            <li><a href="#">FINAL PROJECT</a></li>
+         </ul>
+    </nav>
+    <main>
+        <div class="card1">            
+            <h2>A Little About Me</h2>
+            <p>My name is McKenna. I currently live in Cache Valley, Utah with my husband
+                and 3 year old son, but I'm originally from North Dakota and Kansas. I graduated with an Associates degree
+                from Utah State University in 2018 after serving an LDS mission to the Dakotas. I took a six year break to work and have my son, and I'm now back in school to 
+                learn software development. I love to read, spend time with my family, go for bike rides, cook new recipes, craft, and research anything
+                that sparks my curiosity. I'm a huge fan of science, tech, and history, and absolutely love visiting museums and planetariums.   
+            </p>
+            <img src="images/profile2.jpg" alt="Profile Photo">
+            <div class="utah">
+                <h2>Cache Valley, Utah</h2>
+                <img src="images/logan-utah.jpg" alt="Logan Utah">
+                <p>Cache Valley, Utah is nestled right on the northern border of Utah. It comprises the city of Logan and many other 
+                    surrounding small towns. It's home to Utah State University, so it gains an influx of students during the school season. Residents of 
+                    Logan enjoy skiing at Beaver Mountain, getting a sweet treat at Aggie Ice Cream, and hiking in the beautiful surrounding
+                    mountains. 
+                </p>
+            </div>
+        </div>
+        <div class="card2">
+            <h2>Web Dev Resources</h2>
+            <p><a href="#">Dev.to Community</a></p>
+            <p><a href="#">Smashing Magazine</a></p>
+            <p><a href="#">CSS Tricks</a></p>
+            <p><a href="#">W3 Schools</a></p>
+            <p><a href="#">Udemy</a></p>
+            <p><a href="#">Image Placeholder</a></p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>

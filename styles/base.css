@@ -1,0 +1,151 @@
+:root {
+    --accent1-color: rgb(19, 46, 81);
+    --accent2-color: rgb(103, 144, 175);
+    --accent3-color: rgb(230, 236, 241);
+    --accent4-color: rgb(153, 171, 185);
+    --body-text-font: "Afacad Flux", serif;
+    --heading-font: "Raleway", sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    background-color: var(--accent3-color);
+    
+}
+
+header {
+    display: grid;
+    grid-column: 1 / 4;
+    background: var(--accent2-color);
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+nav {
+    grid-column: 1 / 4;
+    background-color: var(--accent1-color);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+     
+}
+
+.navigation li {
+    flex: 1 1 100%;   
+}
+
+.navigation a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: whitesmoke;
+    font-family: var(--body-text-font);
+    
+}
+
+.navigation a:hover {
+    color: yellow;
+    text-decoration: overline;
+}
+
+main {
+    margin: 2rem;
+    grid-column: 1 / 4;
+    display: grid;
+    font-family: var(--body-text-font);
+    
+}
+
+.card1 {
+    grid-column: 1 / 3;
+    border: 3px solid var(--accent2-color);
+    margin-right: 1rem;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    
+}
+
+.card1 h2 {
+    grid-column: 1 / 3;
+    background-color: var(--accent2-color);
+    padding: 8px;
+    color: whitesmoke;
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 0; 
+
+}
+
+.card1 p {
+    padding: 1rem;
+}
+
+.card1 img {
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+
+.utah {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.utah h2 {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: var(--accent2-color);
+    color: whitesmoke;
+
+}
+.utah p {
+    grid-column: 2 / 3;
+    margin: 0;
+}
+
+.card2 {
+    grid-column: 3 / 4;
+    border: 3px solid var(--accent2-color);
+    margin-right: 1rem;
+    
+}
+
+.card2 h2 {
+    background-color: var(--accent2-color);
+    padding: 8px;
+    color: whitesmoke;
+    font-family: var(--heading-font);
+    text-align: center;
+    margin: 0;
+}
+
+.card2 p {
+    text-align: center;
+    padding: 6px;
+}
+
+.card2 a {
+    text-decoration: none;
+    color: black;
+}
+
+.card2 a:hover {
+    color: rgb(15, 85, 191);
+    text-decoration: overline;
+}
+
+footer {
+    grid-column: 1 / 4;
+    background-color: var(--accent1-color);
+    text-align: center;
+    color: whitesmoke;
+    font-family: var(--body-text-font);
+}
