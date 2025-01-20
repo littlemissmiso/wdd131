@@ -20,7 +20,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-gap: 2rem;
-        justify-items: space-around;
+        justify-items: center;
         align-items: center;
     }
     
