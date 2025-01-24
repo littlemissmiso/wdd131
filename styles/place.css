@@ -1,0 +1,43 @@
+:root {
+    --color1: #273C2C;
+    --color2: #99621E;
+    --color3: #ACBFA4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color1);
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 1rem solid var(--color2);
+    color: #d5ebcc;
+    font-size: clamp(16px, 4vw, 30px);
+}
+
+body {
+    background-color: var(--color3);
+}
+
+footer {
+    background-color: var(--color1);
+    text-align: center;
+    font-size: clamp(12px, 2vw, 18px);
+    color: #d5ebcc;
+    padding: 1rem;
+    border-top: 1rem solid var(--color2);
+}
+
+picture img {
+    width: 100%;
+    height: auto;
+}
+
+.weather img {
+    width: 100px;
+    height: auto;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Place Assignment</title>
+    <meta name="description" content="This is an assignment for WDD 131 to create a desktop/mobile webpage detailing a place I've lived. It includes images and weather data.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Cache County, Utah</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/cache-valley-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/cache-valley-medium2.webp" media="(min-width: 500px)">
+            <img src="images/cache-valley-small2.webp" alt="Cache Valley Utah" width="500px" height="575px">
+        </picture> 
+        <div class="data">
+            <h2>Data</h2>
+            <div class="labels">
+                <label for="area">Area:</label>
+                <span id="area-value">1,173 square miles</span>
+
+                <label for="population">Population:</label>
+                <span id="population-value">134,428</span>
+
+                <label for="city">Largest City:</label>
+                <span id="largest-city-value">Logan</span>
+
+                <label for="total-cities">Total Cities/Towns:</label>
+                <span id="total-cities-value">19</span>
+
+                <label for="language">Language:</label>
+                <span id="language-value">English</span>
+
+                <label for="currency">Currency:</label>
+                <span id="currency-value">Dollars</span>
+
+                <label for="time-zone">Time Zone:</label>
+                <span id="time-zone-value">Mountain Standard Time | MST</span>
+
+                <label for="area-code">Area Code:</label>
+                <span id="area-code-value">#435</span>
+            </div>
+           
+        </div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/partly-sunny.svg" alt="Partly Sunny">
+            <ul>
+                <li>Temperature: 28℉</li>
+                <li>Conditions: Mostly Cloudy</li>
+                <li>Wind: 6 mph</li>
+                <li>Wind Chill: 21℉</li>
+            </ul>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
