@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
     <script src="scripts/place.js" defer></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,41 +26,48 @@
         <div class="data">
             <h2>Data</h2>
             <div class="labels">
-                <label for="area">Area:</label>
-                <span id="area-value">1,173 square miles</span>
-
-                <label for="population">Population:</label>
-                <span id="population-value">134,428</span>
-
-                <label for="city">Largest City:</label>
-                <span id="largest-city-value">Logan</span>
-
-                <label for="total-cities">Total Cities/Towns:</label>
-                <span id="total-cities-value">19</span>
-
-                <label for="language">Language:</label>
-                <span id="language-value">English</span>
-
-                <label for="currency">Currency:</label>
-                <span id="currency-value">Dollars</span>
-
-                <label for="time-zone">Time Zone:</label>
-                <span id="time-zone-value">Mountain Standard Time | MST</span>
-
-                <label for="area-code">Area Code:</label>
-                <span id="area-code-value">#435</span>
+                <div class="list-item">
+                    <span class="label">Area:</span> 1,173 miles²
+                </div>
+                <div class="list-item">
+                    <span class="label">Population:</span> 134,428
+                </div>
+                <div class="list-item">
+                    <span class="label">Largest City:</span> Logan
+                </div>
+                <div class="list-item">
+                    <span class="label">Total Cities/Towns:</span> 19
+                </div>
+                <div class="list-item">
+                    <span class="label">Language:</span> English
+                </div>
+                <div class="list-item">
+                    <span class="label">Currency:</span> Dollar
+                </div>
+                <div class="list-item">
+                    <span class="label">Time Zone:</span> Mountain Standard Time (MST)
+                </div>
+                <div class="list-item">
+                    <span class="label">Area Code:</span> +435
+                </div>
             </div>
            
         </div>
         <div class="weather">
             <h2>Weather</h2>
             <img src="images/partly-sunny.svg" alt="Partly Sunny">
-            <ul>
-                <li>Temperature: 28℉</li>
-                <li>Conditions: Mostly Cloudy</li>
-                <li>Wind: 6 mph</li>
-                <li>Wind Chill: 21℉</li>
-            </ul>
+            <div class="weather-item">
+                <span class="weather-label">Temperature:</span> 28°F
+            </div>
+            <div class="weather-item">
+                <span class="weather-label">Conditions:</span> Mostly Cloudy
+            </div>
+            <div class="weather-item">
+                <span class="weather-label">Wind:</span> 6 mph
+            </div>
+            <div class="weather-item">
+                <span class="weather-label">Wind Chill</span> 21°F
+            </div>
         </div>
 
     </main>

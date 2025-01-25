@@ -1,7 +1,8 @@
 :root {
     --color1: #273C2C;
     --color2: #99621E;
-    --color3: #ACBFA4;
+    --color3: #d6ded3;
+    --bodyfont: "quicksand", serif;
 }
 
 * {
@@ -16,28 +17,78 @@ header {
     padding: 2rem;
     border-bottom: 1rem solid var(--color2);
     color: #d5ebcc;
+    font-family: "Arvo", serif;
     font-size: clamp(16px, 4vw, 30px);
 }
 
 body {
     background-color: var(--color3);
+    font-family: "Quicksand", serif;
 }
 
-footer {
-    background-color: var(--color1);
-    text-align: center;
-    font-size: clamp(12px, 2vw, 18px);
-    color: #d5ebcc;
-    padding: 1rem;
-    border-top: 1rem solid var(--color2);
-}
+
 
 picture img {
     width: 100%;
     height: auto;
+    border-bottom: 3px solid var(--color1);
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: clamp(25px, 4vw, 30px);
+    margin-top: 1rem;
+}
+
+.labels {
+    margin-bottom: 2rem;
+}
+
+.label {
+    display: grid;
+    grid-template-columns: 2fr;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 5px;
 }
 
 .weather img {
     width: 100px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.weather-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    padding: 5px;
+}
+
+.weather-label {
+    display: grid;
+    grid-template-columns: 2fr;
+    text-align: right;
+    font-weight: bold;
+    margin-right: 1rem;
+    
+}
+
+footer {
+    background-color: var(--color1);
+    text-align: center;
+    font-size: clamp(14px, 2vw, 18px);
+    color: #d5ebcc;
+    padding: 1rem;
+    border-top: 1rem solid var(--color2);
+    margin-top: 2rem;
 }
