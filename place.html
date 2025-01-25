@@ -21,7 +21,7 @@
         <picture>
             <source srcset="images/cache-valley-large.webp" media="(min-width: 1000px)">
             <source srcset="images/cache-valley-medium2.webp" media="(min-width: 500px)">
-            <img src="images/cache-valley-small2.webp" alt="Cache Valley Utah" width="500px" height="575px">
+            <img src="images/cache-valley-small2.webp" alt="Cache Valley Utah" width="500" height="575">
         </picture> 
         <div class="data">
             <h2>Data</h2>
@@ -36,7 +36,7 @@
                     <span class="label">Largest City:</span> Logan
                 </div>
                 <div class="list-item">
-                    <span class="label">Total Cities/Towns:</span> 19
+                    <span class="label">Total Cities:</span> 19
                 </div>
                 <div class="list-item">
                     <span class="label">Language:</span> English
@@ -55,7 +55,9 @@
         </div>
         <div class="weather">
             <h2>Weather</h2>
-            <img src="images/partly-sunny.svg" alt="Partly Sunny">
+            <div class="weather-icon">
+               <img src="images/partly-sunny.svg" alt="Partly Sunny"> 
+            </div>
             <div class="weather-item">
                 <span class="weather-label">Temperature:</span> 28°F
             </div>
@@ -66,7 +68,8 @@
                 <span class="weather-label">Wind:</span> 6 mph
             </div>
             <div class="weather-item">
-                <span class="weather-label">Wind Chill</span> 21°F
+                <span class="weather-label">Wind Chill</span>
+                <p><span id="windChill"></span> °F</p>
             </div>
         </div>
 
