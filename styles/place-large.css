@@ -69,16 +69,7 @@
     }
 
     .weather h2::after {
-        content: url('/images/partly-sunny.svg');
-        width: 70px;
-        height: auto;
-        display: block;
-        position: absolute;
-        top: 1%;
-        right: 35%;
-        
-        
-        
+        content: "  🌥️";
 
     }
 
