@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgba(209, 174, 174, 0.758);
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+header p {
+    text-align: center;
+    background-color: rgba(209, 174, 174, 0.758);
+    font-size: 1rem;
+    padding-bottom: 2rem;
+    font-style: italic;
+}
+
+main {
+    width: 600px;
+    margin: 0 auto;
+    background-color: rgba(204, 181, 181, 0.366);
+}
+img {
+    display: block;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    animation: fade 10s;   
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(209, 174, 174, 0.758);
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

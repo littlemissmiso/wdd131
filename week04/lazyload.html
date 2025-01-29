@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Dynamic Web Fundamentals - Lazy Loading Assignment</title>
+    <meta name="description" content="This is a practice assignment for WDD 131 working on lazy loading web pages.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading Practice</h1>
+        <p>Starring Little Miss Miso</p>
+
+    </header>
+    <main>
+        <img src="images/miso-1.jpg" alt="miso-1">
+        <img src="images/miso-2.jpg" alt="miso-2">
+        <img loading="lazy" src="images/miso-3.jpg" alt="miso-3">
+        <img loading="lazy" src="images/miso-4.jpg" alt="miso-4">
+        <img loading="lazy" src="images/miso-5.jpg" alt="miso-5">
+        <img loading="lazy" src="images/miso-6.jpg" alt="miso-6">
+
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
