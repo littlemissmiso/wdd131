@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Dynamic Web Fundamentals - McKenna Johnson - Enhanced Picture Album Project</title>
+    <meta name="description" content="This is the HTML page for the Temple Picture Album project for WDD 131, practicing CSS + JS. This is a edited
+    copy of the orginal, focusing on lazy loading and array techniques.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button id="menu"></button>      
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="Home">Home</a></li>
+                <li><a href="#" id="Old">Old</a></li>
+                <li><a href="#" id="New">New</a></li>
+                <li><a href="#" id="Large">Large</a></li>
+                <li><a href="#" id="Small">Small</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="pageHeader">Home</h2>
+        <div id="templesArray"></div>  
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

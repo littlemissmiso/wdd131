@@ -1,0 +1,55 @@
+@media screen and (min-width: 750px) {
+    
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+    
+    nav a {
+        flex: 1 1 100%;
+    }
+   
+    .temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .temples img {
+        width: 100%;
+        height: auto;
+    }
+    
+    figcaption {
+        text-align: center;
+    }
+    
+    footer {
+        width: 100%;
+        height: 5rem;
+        background-color: var(--accent1-color);
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+  
+}
