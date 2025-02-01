@@ -6,7 +6,7 @@ const temples = [
       dedicated: "2005, August, 7",
       area: 11500,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+      "images/aba-nigeria-temple.jpg"
     },
     {
       templeName: "Manti Utah",
@@ -14,7 +14,7 @@ const temples = [
       dedicated: "1888, May, 21",
       area: 74792,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+      "images/manti-temple.jpg"
     },
     {
       templeName: "Payson Utah",
@@ -22,7 +22,7 @@ const temples = [
       dedicated: "2015, June, 7",
       area: 96630,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+      "images/payson-temple.jpg"
     },
     {
       templeName: "Yigo Guam",
@@ -30,7 +30,7 @@ const temples = [
       dedicated: "2020, May, 2",
       area: 6861,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+      "images/yigo-guam-temple.jpg"
     },
     {
       templeName: "Washington D.C.",
@@ -38,7 +38,7 @@ const temples = [
       dedicated: "1974, November, 19",
       area: 156558,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+      "images/dc-temple.jpeg"
     },
     {
       templeName: "Lima Perú",
@@ -46,7 +46,7 @@ const temples = [
       dedicated: "1986, January, 10",
       area: 9600,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+      "images/lima-peru-temple.jpg"
     },
     {
       templeName: "Mexico City Mexico",
@@ -54,7 +54,7 @@ const temples = [
       dedicated: "1983, December, 2",
       area: 116642,
       imageUrl:
-      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+      "images/mexico-city-temple.jpg"
     },
     {
         templeName: "Logan Utah",
@@ -62,7 +62,7 @@ const temples = [
         dedicated: "1877, May, 18",
         area: 119619,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-52349.jpg"
+        "images/logan-temple.jpg"
       },
     {
         templeName: "Bismarck North Dakota",
@@ -70,7 +70,7 @@ const temples = [
         dedicated: "1998, October, 17",
         area: 10700,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/bismarck-north-dakota-temple/bismarck-north-dakota-temple-7781.jpg"
+        "images/bismarck-north-dakota-temple-7781.jpg"
     },
     {
         templeName: "Smithfield Utah",
@@ -78,7 +78,7 @@ const temples = [
         dedicated: "2022, June, 18",
         area: 81000,
         imageUrl:
-        "https://churchofjesuschristtemples.org/assets/img/temples/smithfield-utah-temple/smithfield-utah-temple-56642.jpg"
+        "images/smithfield-temple.jpg"
     },
 ];
 
@@ -94,7 +94,7 @@ for (let i = 0; i < temples.length; i++) {
                 <p><span class="dedication-label">DEDICATED:</span> ${temples[i].dedicated}</p>
                 <p><span class="area-label">AREA:</span> ${temples[i].area} sqft</p>
             </div>
-            <img loading="lazy" src="${temples[i].imageUrl}" alt="${temples[i].templeName}" />
+            <img loading="lazy" width="400" src="${temples[i].imageUrl}" alt="${temples[i].templeName}" />
         </div>
         `;
 }
@@ -117,7 +117,7 @@ homeLink.addEventListener("click", () => {
                     <p><span class="dedication-label">DEDICATED:</span> ${temples[i].dedicated}</p>
                     <p><span class="area-label">AREA:</span> ${temples[i].area} sqft</p>
                 </div>
-                <img loading="lazy" src="${temples[i].imageUrl}" alt="${temples[i].templeName}" />
+                <img loading="lazy" width="400" src="${temples[i].imageUrl}" alt="${temples[i].templeName}" />
             </div>
             `;
     }
@@ -144,7 +144,7 @@ oldLink.addEventListener("click", () => {
                     <p><span class="dedication-label">DEDICATED:</span> ${oldTemples[i].dedicated}</p>
                     <p><span class="area-label">AREA:</span> ${oldTemples[i].area} sqft</p>
                 </div>
-                <img loading="lazy" src="${oldTemples[i].imageUrl}" alt="${oldTemples[i].templeName}" />
+                <img loading="lazy" width="400" src="${oldTemples[i].imageUrl}" alt="${oldTemples[i].templeName}" />
             </div>
             `;
     }
@@ -171,7 +171,7 @@ newLink.addEventListener("click", () => {
                     <p><span class="dedication-label">DEDICATED:</span> ${newTemples[i].dedicated}</p>
                     <p><span class="area-label">AREA:</span> ${newTemples[i].area} sqft</p>
                 </div>
-                <img loading="lazy" src="${newTemples[i].imageUrl}" alt="${newTemples[i].templeName}" />
+                <img loading="lazy" width="400" src="${newTemples[i].imageUrl}" alt="${newTemples[i].templeName}" />
             </div>
             `;
     }
@@ -196,7 +196,7 @@ largeLink.addEventListener("click", () => {
                     <p><span class="dedication-label">DEDICATED:</span> ${largeTemples[i].dedicated}</p>
                     <p><span class="area-label">AREA:</span> ${largeTemples[i].area} sqft</p>
                 </div>
-                <img loading="lazy" src="${largeTemples[i].imageUrl}" alt="${largeTemples[i].templeName}" />
+                <img loading="lazy" width="400" src="${largeTemples[i].imageUrl}" alt="${largeTemples[i].templeName}" />
             </div>
             `;
     }
@@ -221,7 +221,7 @@ smallLink.addEventListener("click", () => {
                     <p><span class="dedication-label">DEDICATED:</span> ${smallTemples[i].dedicated}</p>
                     <p><span class="area-label">AREA:</span> ${smallTemples[i].area} sqft</p>
                 </div>
-                <img loading="lazy" src="${smallTemples[i].imageUrl}" alt="${smallTemples[i].templeName}" />
+                <img loading="lazy" width="400" src="${smallTemples[i].imageUrl}" alt="${smallTemples[i].templeName}" />
             </div>
             `;
     }
