@@ -35,7 +35,7 @@ header h2 {
     font-size: clamp(20px, 3vw, 30px);
 }
 
-header p {
+.title-explanation {
     padding: 1rem;
 }
 
