@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Product Review Form</title>
+    <meta name="description" content="This is the product review form assignment for WDD 131, practicing good form design using HTML, CSS, and JS.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="review" href="review.html">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label for="chooseProduct">Product Name</label>
+                <select name="chooseProduct" id="chooseProduct" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label id="rating">Overall Rating</label>
+                    <div class="stars">
+                        <div class="1star">
+                            <span>&star;</span>
+                            <label><input type="radio" name="rating" value="oneStar" required></label>
+                        </div>
+                        <div class="2star">
+                            <span>&star;&star;</span>
+                            <label><input type="radio" name="rating" value="twoStar" required></label>
+                        </div>
+                        <div class="3star">
+                            <span>&star;&star;&star;</span>
+                            <label><input type="radio" name="rating" value="threeStar" required></label>
+                        </div>
+                        <div class="4star">
+                            <span>&star;&star;&star;&star;</span>
+                            <label><input type="radio" name="rating" value="fourStar" required></label>
+                        </div>
+                        <div class="5star">
+                            <span>&star;&star;&star;&star;&star;</span>
+                            <label><input type="radio" name="rating" value="fiveStar" required></label>
+                        </div>                        
+                    </div>
+        
+            </fieldset>
+            <fieldset>
+                <label id="install">Date of Installation</label>
+                    <input type="date" name="installDate" id="installDate" required>
+            </fieldset>
+            <fieldset> 
+                <label id="features">Which features did you find useful in the product? <span>Check all that apply</span></label>
+                    <label><input type="checkbox" name="durability" id="durability" value="yes"> Durability</label>
+                    <label><input type="checkbox" name="ease" id="ease" value="yes"> Ease of Use</label>
+                    <label><input type="checkbox" name="perform" id="perform" value="yes"> Performance</label>
+                    <label><input type="checkbox" name="design" id="design" value="yes"> Design</label>
+            </fieldset>   
+            <fieldset>
+                <div class="review">
+                    <label id="review">Written Review <span>Optional</span></label>
+                        <textarea name="reviewBox" id="reviewBox" rows="1" cols="50"></textarea>
+                </div>
+                <div class="name">
+                    <label for="name">Your Name <span>Optional</span></label>
+                        <textarea name="name" id="name" rows="1" cols="1"></textarea>
+                </div>    
+            </fieldset>
+            <input type="submit" value="Post My Review">
+        </form>
+
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

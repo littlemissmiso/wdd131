@@ -1,0 +1,51 @@
+body {
+    width: 375px;
+    font-family: "Liter", sans-serif;
+    
+}
+h1 {
+    background-color: rgb(68, 93, 65);
+    text-align: center;
+    color: white;
+    padding: .5rem;
+    font-size: 25px;
+}
+
+main {
+    background-color: rgb(208, 220, 206);
+    height: 200px;
+}
+
+h2 {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: -1rem;   
+}
+
+.visits {
+    font-weight: 600;
+    color:rgb(68, 93, 65)
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    width: 375px;
+    text-align: center;
+    background-color: rgb(68, 93, 65);
+    padding: .1rem;
+    color: white;
+    margin-top: 1rem;
+    font-size: small;
+}
+
+.footer span {
+    color: white;
+    font-size: medium;
+}
+
+.footer p {
+    margin-bottom: -1rem;
+}
