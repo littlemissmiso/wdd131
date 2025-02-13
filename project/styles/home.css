@@ -485,6 +485,7 @@ footer {
         margin-top: -.5rem;
         margin-bottom: -1rem;
         font-family: var(--main-font);
+        align-items: center;
     }
 
     .cat-feature h2 {
