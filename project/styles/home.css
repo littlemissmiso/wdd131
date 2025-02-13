@@ -377,7 +377,7 @@ footer {
 
 @media screen and (max-width: 850px) {
 
-    a, .cat-feature figcaption, .cat-feature figcaption, .cat-feature h2, .cat-feature h3 {
+    a, .cat-feature figcaption, .cat-feature figcaption {
         display: none;
     }
 
@@ -428,15 +428,21 @@ footer {
 
     .about-section {
         padding-top: 1rem;  
+        align-items: start;
     }
 
     .about-section, .about-info {
         width: 100%;
+        height: auto;
         margin: 0;
     }
 
     .about-info {
         width: 75vw;
+    }
+
+    .about-info h2 {
+        text-align: center;
     }
 
 
@@ -465,11 +471,26 @@ footer {
         height: auto;
         margin: 0;
         padding-left: .2rem;
-        padding-bottom: .2rem;
         padding-top: 1rem;
         box-shadow: none;
         border-radius: 25%;
 
+    }
+
+    .cat-images h2, .cat-images h3 {
+        background-color: var(--background-color);
+        border-radius: 0;
+        color: white;
+        font-size: clamp(8px, 2vw, 12px);
+        margin-top: -.5rem;
+        margin-bottom: -1rem;
+        font-family: var(--main-font);
+    }
+
+    .cat-feature h2 {
+        margin-bottom: 0;
+        margin-top: 1rem;
+        padding: 0;
     }
 
 
