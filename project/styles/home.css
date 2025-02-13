@@ -381,6 +381,44 @@ footer {
         display: none;
     }
 
+    header img {
+        width: 140px;
+        height: auto;
+        z-index: 3;
+    }
+    
+    .img-wrap {
+        position: relative;
+        z-index: 1;
+    }
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        background-color: var(--accent3-color);
+        z-index: -1;
+        
+    }
+    
+    .circle2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 146px;
+        height: 146px;
+        background-color: white;
+        z-index: -2;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        
+    }
+
     main {
         display: grid;
         max-width: 100%;
