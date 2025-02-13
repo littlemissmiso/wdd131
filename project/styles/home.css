@@ -343,6 +343,7 @@ a:hover {
 
 .review textarea {
     padding: .5rem;
+    width: 100%;
 }
 
 #chooseChoice {
@@ -438,16 +439,14 @@ footer {
     .about-section {
         padding-top: 1rem;  
         align-items: start;
-    }
-
-    .about-section, .about-info {
         width: 100%;
         height: auto;
         margin: 0;
     }
 
     .about-info {
-        width: 75vw;
+        margin-right: 5%;
+        margin-left: 5%;
     }
 
     .about-info h2 {
@@ -458,6 +457,11 @@ footer {
         display: none;    
 
     }
+
+    .cat-header h2 {
+        font-family: var(--main-font);
+    }
+
     .cat-images {
         display: block;
         padding-bottom: 1rem;
@@ -471,11 +475,27 @@ footer {
         background-color: var(--background-textbox-color);
     }
 
-    .cat-images img {
-        
+    .contact-header h2 {
+        width: 100%;
+        padding: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+        text-align: center;
     }
 
+    .lowerHalf {
+        display: block;
+    }
 
+    .address-info iframe {
+        width: 100%;
+    }
 
+    .address {
+        padding: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
 
 }
