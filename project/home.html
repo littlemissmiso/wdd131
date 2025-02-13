@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Final Website Project</title>
+    <meta name="description" content="This is the home page for the final website project for WDD 131. It is a home page for a ficticious cat shelter, and will display html, css, and js skillsets.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gaegu&family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="img-wrap">
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <img src="images/logo-image2.PNG" alt="logo-image">
+        </div>
+        <h1>Adoption Agency</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Adopt a Cat</a></li>
+                <li><a href="#">Caring for my Cat</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="about-section">
+            <div class="about-info">
+                <h2>Our Story</h2>
+                <p>Whiskers & Whimsy was born from a deep love for cats and a passion for making a difference. Founded by Emily Harper, a lifelong cat lover, the agency began as a small project from her home. Emily had always dreamed of helping abandoned cats find loving homes, but it wasn’t until she rescued a stray kitten that she realized how many others needed her help. What started as fostering a few cats quickly grew into a full-fledged adoption agency. Emily's mission is simple: to provide every cat with the care, attention, and love they deserve while matching them with families who will cherish them forever. Through Whiskers & Whimsy, Emily brings together the magic of feline companionship and the joy of adoption, making it a whimsical journey for both cats and their new families. Today, the agency continues to thrive, helping countless cats find their perfect homes, one whisker at a time.</p>
+        
+            </div> 
+            <img src="images/cat-building.jpg" alt="cat-building">
+
+        </div>
+        <div class="cat-feature">
+            <h2>Monthly Featured Cats</h2>
+            <div class="cat-images">
+                <figure>
+                    <img src="images/cat-1.jpg" alt="cat-1">
+                    <h2>Scuba Steve</h2>
+                    <figcaption>Scuba Steve is the ultimate beach bum of the cat world. Like a laid-back 
+                        scuba diver, he’s all about relaxation—spending his days lounging 
+                        in the sun and taking life slow. With his mellow vibe and love for 
+                        naps, he’s the perfect companion if you’re all about taking it easy 
+                        and enjoying the calm moments.</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat-2.jpg" alt="cat-2">
+                    <h3>Tikka Meowsala</h3>
+                    <figcaption>Tikka Meowsala is a spicy little feline with a personality to 
+                        match her name! Playful and curious, she’s always exploring her 
+                        surroundings with a sense of adventure. Whether she’s chasing toys or 
+                        seeking out cozy spots for a nap, Tikka knows how to keep things 
+                        exciting. With her striking fur and sweet, sassy attitude, she’s the 
+                        purrfect mix of fun and charm—just like your favorite dish with a 
+                        little extra kick!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat-3.jpg" alt="cat-3">
+                    <h2>Toasty Ghosty</h2>
+                    <figcaption>Toasty Ghosty is a mysterious and snuggly spirit, floating 
+                        through the house with a calm, ghostly presence. With her soft, 
+                        fluffy fur and serene gaze, she’s a master of lounging in quiet 
+                        corners, often appearing like a cozy little specter in the shadows. 
+                        Whether she's curling up for a nap or gently purring, Toasty Ghosty 
+                        is the chill companion you never knew you needed, bringing warmth and 
+                        comfort wherever she goes.</figcaption>
+                </figure>   
+            </div>
+        </div>
+        <div class="contact-header">
+            <h2>Location & Contact Info</h2>
+        </div>
+        <div class="lowerHalf">
+            <div class="address-info">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3467.633421553982!2d-83.2606397!3d35.3140465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88593b38757e5815%3A0xd98e9650274fb295!2sAmerican%20Museum%20of%20the%20House%20Cat!5e1!3m2!1sen!2sus!4v1739331154227!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+            <div class="address">
+                <h2>Address</h2>
+                <p>5063 US Hwy 441 S, Sylva, NC</p>
+                <h2>Hours</h2>
+                <p>9AM - 4PM | Monday thru Friday</p>
+                <h2>Phone Number</h2>
+                <p>(123) 867-5309</p>
+            </div>
+        
+            <div class="contact-form">
+                <h2>Have a Question?</h2>
+                <form method="get" action="CONFIRM.html" class="wf1"></form>
+                    <fieldset>
+                        <label>Name* <input type="text" name="name" placeholder="Your Name Here" required></label>
+                        <label>Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                    </fieldset> 
+                    <fieldset>
+                        <label for="chooseChoice">I would like information about:* </label>
+                        <select name="chooseChoice" id="chooseChoice" required>
+                            <option value="" disabled selected>Select an Option...</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label id="rating">Asking for: </label>
+                            <div class="ask">
+                                <div class="myself">
+                                    <span>Myself</span>
+                                    <label><input type="radio" name="person" value="myself" required></label>
+                                </div>
+                                <div class="friend">
+                                    <span>Friend or Family Member</span>
+                                    <label><input type="radio" name="person" value="friend" required></label>
+                                </div>
+                                <div class="business">
+                                    <span>Business</span>
+                                    <label><input type="radio" name="person" value="business" required></label>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <label id="question">Please tell us about your question: <span>Optional</span></label>
+                                    <textarea name="questionBox" id="questionBox" rows="1" cols="50"></textarea>
+                            </div>
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>
