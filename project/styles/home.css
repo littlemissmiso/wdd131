@@ -461,7 +461,7 @@ footer {
         top: 60px;
         gap: 0;
         flex-direction: column;
-        background-color: var(--accent3-color);
+        background-color: var(--background-color);
         width: 40%;
         text-align: center;
         transition: 0.3s;
@@ -472,13 +472,13 @@ footer {
     }
     
     .navigation a {
-        color: black;
+        color: white;
         font-size: 30px;
         
     }
     
     a:hover {
-        text-decoration: overline;
+        color: var(--accent3-color);
     }
     
     .navigation li {
