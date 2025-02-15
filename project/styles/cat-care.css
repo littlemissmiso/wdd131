@@ -202,7 +202,7 @@ footer {
     border-top: 10px solid var(--accent1-color);
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 810px) {
 
     body, html {
         overflow-x: hidden;
@@ -325,6 +325,6 @@ footer {
     }
 
     h2 {
-        width: 80%;
+        width: 100%;
     }
 }   
