@@ -231,6 +231,7 @@ a:hover {
     padding-top: 5rem;
     padding-bottom: 5rem;
     font-size: clamp(18px, 3vw, 35px);
+    font-family: var(--main-font);
 }
 
 .contact-number span {
@@ -238,6 +239,8 @@ a:hover {
     color: var(--accent1-color);
     text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
 }
+
+
 
 footer {
     background-color: var(--accent2-color);
