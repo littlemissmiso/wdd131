@@ -258,9 +258,18 @@ footer {
     #pageHeader {
         max-width: 80%;
     }
+
+    body, html {
+        overflow-x: hidden;
+    }
+
 }
 
 @media screen and (max-width: 750px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
 
     #pageHeader {
         max-width: 100%;

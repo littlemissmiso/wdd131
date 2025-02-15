@@ -204,6 +204,10 @@ footer {
 
 @media screen and (max-width: 750px) {
 
+    body, html {
+        overflow-x: hidden;
+    }
+
 
     header img {
         width: 140px;
@@ -314,8 +318,7 @@ footer {
     }
 
     .nutrition img, .grooming img, .litter img, .advice img, .supplies img {
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         max-width: 100%;
     }
 
