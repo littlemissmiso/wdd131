@@ -320,6 +320,7 @@ footer {
     .nutrition img, .grooming img, .litter img, .advice img, .supplies img {
         display: block;
         max-width: 100%;
+        height: auto;
     }
 
     h2 {
