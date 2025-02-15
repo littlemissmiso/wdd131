@@ -318,7 +318,8 @@ footer {
     }
 
     .nutrition img, .grooming img, .litter img, .advice img, .supplies img {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
         max-width: 100%;
         height: auto;
     }
