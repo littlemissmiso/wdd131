@@ -275,6 +275,12 @@ footer {
         padding: .5rem;
     }
 
+    figure img {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 
     header img {
         width: 140px;
