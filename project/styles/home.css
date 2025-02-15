@@ -144,6 +144,10 @@ a:hover {
     background-color: var(--background-textbox-color);
     margin-right: 2rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 
 }
 
@@ -152,6 +156,8 @@ a:hover {
     padding: 1rem;
     font-family: var(--title-font);
     font-size: 30px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 /* ---------FEATURED CATS SECTION----------------*/
@@ -207,7 +213,7 @@ a:hover {
 .cat-images h2 {
     background-color: var(--accent1-color);
     font-family: var(--title-font);
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .cat-images h3 {
@@ -218,7 +224,7 @@ a:hover {
     padding: 1rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
-    border-radius: 50%;
+    border-radius: 10px;
 }
 
 .cat-images figcaption {
@@ -253,6 +259,7 @@ a:hover {
     font-family: var(--main-font);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin-bottom: 2rem;
+    border-radius: 10px;
 
 }
 
