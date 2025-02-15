@@ -1,3 +1,4 @@
+
 :root {
     --accent1-color: #F18F01;
     --accent2-color: #048BA8;
@@ -21,6 +22,10 @@ body {
     
 }
 
+body, html {
+    overflow-x: hidden;
+}
+
 main {
     background-color: var(--background-color);
     padding-right: 5%;
@@ -33,6 +38,7 @@ main {
 .cats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
     
 }
 
@@ -48,7 +54,7 @@ main {
 
 #pageHeader {
     padding-top: 5rem;
-    max-width: 100%;
+    max-width: 60%;
     text-align: center;
     background-color: var(--accent1-color);
     padding: .5rem;
@@ -238,8 +244,27 @@ footer {
     border-top: 10px solid var(--accent1-color);
 }
 
+@media screen and (max-width: 1300px) and (min-width: 751px) {
+    .cats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .cats img {
+        display: flex;
+    }
+
+    #pageHeader {
+        max-width: 80%;
+    }
+}
+
 @media screen and (max-width: 750px) {
 
+    #pageHeader {
+        max-width: 100%;
+    }
 
     .info-hover {
         display: none;

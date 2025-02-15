@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals | Final Website Project Cat Care Page</title>
+    <meta name="description" content="This is the Cat Care page for the final website project for WDD 131. It is a page detailing general cat care for a ficticious cat shelter, and will display html, css, and js skillsets.">
+    <meta name="author" content="McKenna Johnson">
+    <link rel="stylesheet" href="styles/cat-care.css">
+    <script src="scripts/cat-care.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gaegu&family=Henny+Penny&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="img-wrap">
+            <div class="circle"></div>
+            <div class="circle2"></div>
+            <img src="images/logo-image2.PNG" alt="logo-image">
+        </div>
+        <h1>Adoption Agency</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cat-profiles.html">Adopt a Cat</a></li>
+                <li><a href="cat-care.html">Cat Care</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>GENERAL CAT CARE</h2>
+        <p><span>Information Source:</span> https://www.aspca.org/pet-care/cat-care/general-cat-care</p>
+        <div class="cat-care-info">
+            <h3>Feeding Your Cat</h3>
+            <div class="nutrition">
+                <img src="images/cat-food.jpg" alt="Cat Food">
+                <ul class="nutrition-list">
+                    <li>Feed your cat 2-3 times per day at regular times.</li>
+                    <li>Your cat should eat 1/4-1/3 C per meal, depending on age and size.</li>
+                    <li>Use a mix of both wet and dry high quality cat food. Ensure they contain taurine.</li>
+                    <li>Have fresh, clean drinking water available at all times.</li>
+                    <li>Treats should be no more than 5-10% of the diet.</li>
+                    <li>Do not feed your cat table scraps, dairy, or other human consumables.</li>
+                </ul>
+            </div>
+            <h3>Grooming Your Cat</h3>
+            <div class="grooming">
+                <ul class="grooming-list">
+                    <li>Brush your cat regularly as needed. (Varies depending on fur length)</li>
+                    <li>Only bathe your cat when absolutely necessary.</li>
+                    <li>Trim claws regularly, and provide multiple scratching posts.</li>
+                    <li>Work to maintain good dental hygeine.</li>
+                </ul>
+                <img src="images/cat-bath.jpg" alt="Cat Bath">
+            </div>
+            <h3>Litter Box</h3>
+            <div class="litter">
+                <img src="images/cat-box.jpg" alt="Cat Box">
+                <ul class="litter-list">
+                    <li>You should have 1 litter box per cat, plus one. So 2 cats would need 3 boxes.</li>
+                    <li>Place litter boxes in easy to access areas, away from loud noises.</li>
+                    <li>Avoid heavily scented litter.</li>
+                    <li>Scoop litter at least 1x per day, and fully change litter 1x per month.</li>
+                </ul>
+            </div>
+            <h3>General Advice</h3>
+            <div class="advice">
+                <ul class="advice-list">
+                    <li>Play with your cat regularly to prevent boredom and encourage bonding.</li>
+                    <li>Actively watch for any health concerns.</li>
+                    <li>Keep up to date with vaccinations and health checkups.</li>
+                    <li>Spay/Neuter your cat.</li>
+                    <li>Be careful with allowing young children around your cat. Teach proper handling.</li>
+                </ul>
+                <img src="images/cat-play.jpg" alt="Cat Play">
+            </div>
+            <h3>Necessary Cat Supplies</h3>
+            <div class="supplies">
+                <img src="images/cat-bed.jpg" alt="Cat Bed">
+                <ul class="supplies-list">
+                    <li>Quality cat food</li>
+                    <li>Food Dish</li>
+                    <li>Water Bowl</li>
+                    <li>Interactive Toys</li>
+                    <li>Brush</li>
+                </ul>
+                <ul class="supplies-list2">
+                    <li>Safety Collar with ID Tag</li>
+                    <li>Scratching Post or Pad</li>
+                    <li>Litter Box & Litter</li>
+                    <li>Cat Carrier</li>
+                    <li>Cat Bed</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer name">
+            <p>&copy;<span id="year"></span>🐈 | McKenna Johnson |🐈 Utah</p>
+        </div>
+        <div class="modified">
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>

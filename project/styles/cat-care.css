@@ -1,0 +1,335 @@
+:root {
+    --accent1-color: #F18F01;
+    --accent2-color: #048BA8;
+    --accent3-color: #99C24D;
+    --background-textbox-color: #dce7f4;
+    --background-color: #2E4057;
+    --title-font: "Henny Penny", serif;
+    --main-font: "DM Sans", serif;
+    --alternate-font: "Gaegu", serif;
+
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+/*------------------HEADER SETTINGS----------------*/
+header img {
+    width: 300px;
+    height: auto;
+    z-index: 3;
+}
+
+.img-wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 305px;
+    height: 305px;
+    background-color: var(--accent3-color);
+    z-index: -1;
+    
+}
+
+.circle2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 315px;
+    height: 315px;
+    background-color: white;
+    z-index: -2;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
+
+#menu {
+    visibility: hidden;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: clamp(30px, 4vw, 50px);
+    text-align: left;
+    margin-left: 1rem;
+}
+
+header {
+    background-color: var(--accent2-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
+    padding: 1rem;
+    align-items: center;
+    z-index: 0;
+    border-bottom: 6px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+
+}
+
+/*--------------------NAVIGATION SETTINGS------------------*/
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    grid-gap: 5rem;
+    margin-right: 2rem;
+    text-align: center;
+    
+}
+
+a {
+    font-size: clamp(15px, 4vw, 40px);
+    text-decoration: none;
+    color: black;
+    font-family: var(--alternate-font);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.2);
+    
+}
+
+a:hover {
+    color:#F18F01;
+}
+
+main {
+    background-color: var(--background-color);
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    
+}
+
+h2, p {
+    text-align: center;
+}
+
+h2 {
+    padding-top: 5rem;
+    max-width: 60%;
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: .5rem;
+    padding-left: 1rem;
+    font-family: var(--main-font);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    font-size: clamp(20px, 3vw, 40px);
+    color: black;
+}
+
+p {
+    padding: .5rem;
+    color: white;
+    font-family: var(--alternate-font);
+}
+
+
+.cat-care-info {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.cat-care-info h3 {
+    text-align: center;
+}
+
+.cat-care-info img {
+    max-width: 400px;
+    height: auto;
+}
+
+h3 {
+    background-color: var(--accent3-color);
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 2rem;
+    padding: .75rem;
+    font-family: var(--alternate-font);
+    font-size: clamp(20px, 4vw, 25px);
+}
+
+.nutrition, .grooming, .litter, .advice, .supplies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-family: var(--main-font);
+    background-color: var(--background-textbox-color);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.nutrition li, .grooming li, .litter li, .advice li, .supplies li {
+    padding: .5rem;
+}
+
+.supplies {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: var(--accent2-color);
+    color: black;
+    font-family: var(--main-font);
+    text-align: center;
+    padding: 1rem;
+    border-top: 10px solid var(--accent1-color);
+}
+
+@media screen and (max-width: 750px) {
+
+
+    header img {
+        width: 140px;
+        height: auto;
+        z-index: 3;
+    }
+    
+    .img-wrap {
+        position: relative;
+        z-index: 1;
+    }
+
+    .circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        background-color: var(--accent3-color);
+        z-index: -1;
+        
+    }
+    
+    .circle2 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 146px;
+        height: 146px;
+        background-color: white;
+        z-index: -2;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        
+    }
+
+    #menu {
+        visibility: visible;
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #ffffff;
+         position: absolute;
+        top: 1rem;
+        right: 1rem;
+        
+    }
+    
+    #menu::before {
+        content: "☰";
+        
+    }
+    
+    #menu.active::before {
+        content: "❌";
+    }
+    
+    .navigation {
+        position: absolute;
+        right: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--background-color);
+        width: 40%;
+        text-align: center;
+        transition: 0.3s;
+        margin: 0;
+        padding: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    }
+    
+    .navigation a {
+        color: white;
+        font-size: 30px;
+        
+    }
+    
+    a:hover {
+        color: var(--accent3-color);
+    }
+    
+    .navigation li {
+        padding: 1rem;
+    
+    }
+    
+    .navigation.active {
+        right: 0;
+    }
+       
+
+    main {
+        display: block;
+        box-sizing: border-box;
+    }
+
+    .nutrition, .grooming, .litter, .advice, .supplies {
+        border: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .nutrition img, .grooming img, .litter img, .advice img, .supplies img {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 300px;
+    }
+
+    h2 {
+        width: 80%;
+    }
+}   
