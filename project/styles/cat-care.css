@@ -193,16 +193,6 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: var(--accent2-color);
     color: black;
@@ -326,7 +316,7 @@ footer {
     .nutrition img, .grooming img, .litter img, .advice img, .supplies img {
         display: flex;
         flex-wrap: wrap;
-        max-width: 300px;
+        max-width: 100%;
     }
 
     h2 {
